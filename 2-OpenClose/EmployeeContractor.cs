@@ -1,8 +1,8 @@
 namespace OpenClosePrinciple
 {
-    public class EmployeePartTime : Employee
+    public class EmployeeContractor : Employee
     {
-        public EmployeePartTime(string fullname, int hoursWorked)
+        public EmployeeContractor(string fullname, int hoursWorked)
         {
             Fullname = fullname;
             HoursWorked = hoursWorked;
@@ -10,7 +10,7 @@ namespace OpenClosePrinciple
 
         public override decimal CalculateSalaryMonthly()
         {
-            decimal hourValue = 20000M;
+            decimal hourValue = 15000M;
             decimal salary = hourValue * HoursWorked;
             return salary;
         }
