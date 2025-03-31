@@ -7,8 +7,7 @@ namespace OpenClosePrinciple
         public string Fullname { get; set; }
         public int HoursWorked { get; set; }
 
-        public abstract decimal CalculateSalaryMonthly();
-        
+        public abstract decimal CalculateSalaryMonthly();        
 
     }
 
